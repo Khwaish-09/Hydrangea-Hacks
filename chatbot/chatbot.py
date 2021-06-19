@@ -18,7 +18,7 @@ trainer=ChatterBotCorpusTrainer(eng_bot)
 #this is for the custom data:
 trainer.train("chatterbot.corpus.english")
 #making our own data:
-trainer.train("data/data.yml")
+trainer.train(r'C:\Users\siya1\OneDrive\Desktop\python codes\Hydrangea hackathon\Heal & Help\Hydrangea-Hacks\chatbot\data\data.yml')
 
 @app.route("/")
 def index():
