@@ -12,9 +12,10 @@ app=Flask(__name__)
 
 '''this is for storing our data
 "Chatterbot" is the username, storage adap is for creating the database'''
-eng_bot=ChatBot("Chatterbot",storage_adapter="chatterbot.storage.SQLStorageAdapter")
+bot=ChatBot("Heal Helper")
+#eng_bot=ChatBot("Chatterbot",storage_adapter="chatterbot.storage.SQLStorageAdapter")
 #train data
-trainer=ChatterBotCorpusTrainer(eng_bot)
+trainer=ChatterBotCorpusTrainer(bot)
 #this is for the custom data:
 trainer.train("chatterbot.corpus.english")
 #making our own data:
@@ -22,12 +23,12 @@ trainer.train(r'C:\Users\siya1\OneDrive\Desktop\python codes\Hydrangea hackathon
 
 @app.route("/")
 def index():
-    return render_template("index.html")  #to send context to html file
+    return render_template("chatbot_index.html")  #to send context to html file
 
 @app.route("/get") #to get bot response
 def get_bot_response():
     userText=request.args.get("msg") #get data from input where we write js to index.html
-    return str(eng_bot.get_response(userText))
+    return str(bot.get_response(userText))
 
 if __name__=="__main__":
     app.run(debug=True) 
