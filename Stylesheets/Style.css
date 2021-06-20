@@ -3,18 +3,29 @@
   padding: 0;
 }
 
-.header {
-  min-height: 100vh;
+.header,
+.book-appointment {
   width: 100%;
-  background: #d6d6d6;
+  background: rgb(244, 218, 245);
   position: relative;
+}
+
+.footer {
+  width: 100%;
+  max-height: 30px;
+  background: #c8b0f7;
+  position: relative;
+  bottom: 0;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .logo {
   margin: 1rem;
   border-radius: 100%;
-  max-width: 70px;
-  max-height: 70px;
+  max-width: 85px;
+  max-height: 85px;
 }
 
 .nav-links {
@@ -23,7 +34,7 @@
 }
 
 nav {
-  background-color: #d7caf1;
+  background-color: #c8b0f7;
   height: 90px;
   display: flex;
   padding: 0% 2%;
@@ -35,14 +46,14 @@ nav ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
-  text-align: center;
-  align-items: right;
+  text-align: right;
 }
 
 nav ul li {
   vertical-align: middle;
   display: inline-block;
   padding: 8px 12px;
+  text-align: center;
 }
 
 nav ul li a {
@@ -57,27 +68,18 @@ nav ul li a:hover {
   font-weight: bold;
 }
 
-.slide-img {
-  width: 100%;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
+.slideshow {
   position: relative;
   margin: auto;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
+.slide-img {
+  height: auto;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
@@ -88,45 +90,30 @@ nav ul li a:hover {
   padding: 16px;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 33px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Caption text */
-.text {
+.number {
   color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
+  font-size: 22px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
 }
 
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -143,7 +130,6 @@ nav ul li a:hover {
   background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -167,4 +153,51 @@ nav ul li a:hover {
   to {
     opacity: 1;
   }
+}
+
+.slot-img {
+  height: px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.booking-text-up {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.booking-text-down {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: rgb(67, 63, 136);
+  padding-left: 80px;
+}
+
+.booking-heading {
+  font-family: "Staatliches", cursive;
+  font-size: 40px;
+  padding-left: 10px;
+  text-decoration: underline;
+}
+
+.form-link {
+  color: rgb(67, 63, 148);
+}
+
+.form-link:hover {
+  color: coral;
+}
+
+.footer-text {
+  vertical-align: middle;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
 }

@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="../Stylesheets/Style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 </head>
 <body>
     <section class = "header">
@@ -19,7 +22,6 @@
                 <ul>
                     <li><a href="../Websites/Index.html">HOME</a></li>
                     <li><a href="../Websites/Pyschological Assesment.html">PSYCHOLOGICAL <br> ASSESSMENT</a></li>
-                    <li><a href="../Websites/Upcoming Meets.html">UPCOMING <br> MEETS</a></li>
                     <li><a href="../Websites/Soothe Thyself.html">SOOTHE <br> THYSELF</a></li>
                     <li><a href="../Websites/Conquering Covid.html">CONQUERING <br> COVID</a></li>
                     <li><a href="">CHAT BOT</a></li>
@@ -39,7 +41,7 @@
                 <img class = "slide-img" src="../Images/SlideShow 2.png">
             </div>
   
-            <div class="Slides">
+            <div class="slides">
                 <div class="number">3 / 5</div>
                 <img class = "slide-img" src="../Images/SlideShow 3.png">
             </div>
@@ -67,19 +69,29 @@
             <span class="dot" onclick="currentSlide(5)"></span>
         </div>
     </section>
-    <!-- book an appointment -->
-    <section class="book an appointment">
-        <h2> Book an appointment with our experts </h2>
-        <p> It feels great when you know someone is there to listen to you. 
+
+    <section class="book-appointment">
+        <br>
+        <br>
+        <p class="booking-heading"> Stressed? <br>
+            Book an appointment with our experts </p> <br>
+        <p class="booking-text-up"> Doesn't feels great when you know someone is there to listen to you. 
             We at Heal & Help are not giving up until everyone dealing with mental health
-             problems gets support </p>
-        <img src="../Images/appointment.png">
-        <p>
-            To book a slot for consultation with an expert fill this form
-        </p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdMKdr9wlwsv9Y63DcouecvxYtehCdrZWUu0uS9bSZf68a7ow/viewform?usp=pp_url">
-            Here
-        </a>
+            problems gets support </p> <br>
+        <div class = "appointment-link"></div>
+            <img class = "slot-img" src="../Images/appointment.png">
+            <div class = "booking-text-down">To book a slot for consultation with an expert fill 
+                <a class = "form-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdMKdr9wlwsv9Y63DcouecvxYtehCdrZWUu0uS9bSZf68a7ow/viewform?usp=pp_url">
+                    THIS
+                </a>
+                form
+            </div>
+        </div>
     </section>
+
+    <section class="footer">
+        <p class="footer-text"> Made for Hydrangea Hacks Hackathon </p>
+    </section>
+    <script src="../Javascript/Slideshow.js"></script>
 </body>
 </html> 
