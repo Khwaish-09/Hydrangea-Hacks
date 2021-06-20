@@ -78,3 +78,7 @@ nav ul li a:hover {
 body {
   background-color: rgb(244, 218, 245);
 }
+
+.content {
+  min-height: 88vh;
+}
