@@ -4,7 +4,8 @@
 }
 
 .header,
-.book-appointment {
+.book-appointment,
+.intro-text {
   width: 100%;
   background: rgb(244, 218, 245);
   position: relative;
@@ -162,7 +163,8 @@ nav ul li a:hover {
   margin-right: auto;
 }
 
-.booking-text-up {
+.booking-text-up,
+.intro-text {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 25px;
   font-weight: bold;
@@ -180,7 +182,8 @@ nav ul li a:hover {
   padding-left: 80px;
 }
 
-.booking-heading {
+.booking-heading,
+.what-we-do {
   font-family: "Staatliches", cursive;
   font-size: 40px;
   padding-left: 10px;
@@ -200,4 +203,9 @@ nav ul li a:hover {
   text-align: center;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 20px;
+}
+
+.intro-text ul li {
+  display: flex;
+  flex-wrap: wrap;
 }

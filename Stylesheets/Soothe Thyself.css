@@ -14,10 +14,10 @@
   max-height: 30px;
   background: #c8b0f7;
   position: relative;
-  bottom: 0;
+  bottom: 0px;
   align-items: center;
   text-align: center;
-  vertical-align: middle;
+  vertical-align: bottom;
 }
 
 .footer-text {
@@ -93,4 +93,19 @@ body {
 .heading span {
   font-style: italic;
   font-size: 30px;
+}
+
+.audio-details {
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+}
+
+.audio {
+  float: left;
+  padding-left: 10px;
+}
+
+.podcast {
+  float: right;
+  padding-right: 10px;
 }
