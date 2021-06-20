@@ -100,6 +100,13 @@ nav ul li a:hover {
     width: 40%;
     margin-top: 60px;
   }
+  #buttonInput {
+    font-size: 20px;
+    position: fixed;
+    right: 290px;
+    width: 60px;
+    bottom:0;
+  }
   #userInput {
     margin-left: auto;
     margin-right: auto;
@@ -107,11 +114,13 @@ nav ul li a:hover {
     margin-top: 60px;
   }
   #textInput {
-    width: 90%;
+    width: 500px;
     border: none;
     border-bottom: 3px solid black;
     font-family: monospace;
     font-size: 20px;
+    position: fixed;
+    bottom: 0;
   }
   .userText {
     color: white;
@@ -119,12 +128,16 @@ nav ul li a:hover {
     font-size: 20px;
     text-align: right;
     line-height: 30px;
+    position: absolute;
+    right: 7%;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
   .userText span {
     background-color: #808080;
     padding: 10px;
     border-radius: 10px;
-    margin-right: 10px
+    margin-right: 10px;
   }
   .botText {
     color: white;
@@ -132,6 +145,8 @@ nav ul li a:hover {
     font-size: 20px;
     text-align: left;
     line-height: 30px;
+    position: absolute;
+    left: 7%;
   }
   .botText span {
     background-color: rgb(161, 199, 243);
@@ -151,11 +166,20 @@ nav ul li a:hover {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-    margin-top: 60px;
+    margin-top: 30px;
     border: 2px solid #3c005a;
+    height: 500px;
   }
   .box {
     border: 2px solid black;
+  }
+
+  .robo {
+    margin-right: 5px;
+    border-radius: 100%;
+    max-width: 100px;
+    max-height: 100px;
+    display: inline;
   }
   </style>
 </head>
@@ -164,7 +188,7 @@ nav ul li a:hover {
 <section class = "header">
         <nav>
             <a href="../Websites/Index.html">
-                <img class = "logo" src="../Images/Logo.png">
+                <img class = "logo" src="../templates/Logo.png">
             </a>
             <div class="nav-links">
                 <ul>
@@ -179,22 +203,19 @@ nav ul li a:hover {
         </nav>
     </section>
     <section class="heading">
+      <div class = "robo">
         <img
-            src="..\Robo.jpg"
+            src="../templates/Robo.jpg"
             style="width:40px;height:40px;"
             class="center"
-        /> </br>
+        /> 
+      </div> </br>
         <h1 class="heading"> JIFFY<span>Your mental-health chatbot</span></h1> 
     </section>
 <div class="box"></div>
     <div class="boxed">
         <div>
-            <div id="chatbox">
-                <img
-                    src="..\Robo.jpg"
-                    alt="JIFFY"
-                    style="width:40px;height:40px;"
-                />                
+            <div id="chatbox">              
                 <p class="botText">
                     <span> Hi! I am Jiffy, your Mental-Health Helper. </span>
                 </p>
@@ -231,8 +252,5 @@ nav ul li a:hover {
     </script>
 
 </div>
-<section class="footer">
-    <p class="footer-text"> Made for Hydrangea Hacks Hackathon </p>
-</section>
 </body>
 </html>

@@ -109,3 +109,7 @@ body {
   float: right;
   padding-right: 10px;
 }
+
+.content {
+  min-height: 140vh;
+}
