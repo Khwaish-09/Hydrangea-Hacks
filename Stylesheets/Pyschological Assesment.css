@@ -6,7 +6,8 @@
 .header {
   width: 100%;
   background: rgb(244, 218, 245);
-  position: relative;
+  position: absolute;
+  top: 0;
 }
 
 .footer {
@@ -77,66 +78,4 @@ nav ul li a:hover {
 body {
   background-color: rgb(244, 218, 245);
   font-family: "Poppins", sans-serif;
-}
-
-.container {
-  margin: 20px 40px;
-  color: black;
-}
-
-.heading {
-  font-size: 60px;
-  color: black;
-}
-
-.heading span {
-  font-style: italic;
-  font-size: 30px;
-}
-
-.profiles {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  position: relative;
-  padding: 1rem;
-}
-
-.profile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #353434;
-  border-radius: 1.5rem;
-  margin: 2rem;
-  transition: transform 0.2s;
-  padding: 2rem;
-}
-
-.profile-img {
-  height: 400px;
-  width: 400px;
-  border-radius: 100%;
-}
-
-.name {
-  padding-left: 5.3rem;
-  padding-right: 5.3rem;
-  padding-top: 1.5rem;
-  height: 35px;
-  font-size: 25px;
-  font-weight: bold;
-  font-family: "Cinzel Decorative", cursive;
-  text-align: center;
-}
-
-.profile:hover {
-  transform: scale(1.1);
-}
-
-.descp {
-  font-family: "Mali", cursive;
-  font-size: 20px;
-  text-align: center;
 }
