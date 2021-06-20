@@ -11,7 +11,7 @@
 
 .footer {
   width: 100%;
-  max-height: 30px;
+  max-height: 50px;
   background: #c8b0f7;
   position: relative;
   bottom: 0px;
@@ -111,5 +111,11 @@ body {
 }
 
 .content {
-  min-height: 140vh;
+  min-height: 150vh;
+}
+
+.audio-heading {
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+  font-weight: 900;
 }

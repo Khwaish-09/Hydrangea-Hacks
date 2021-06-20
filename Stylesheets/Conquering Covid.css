@@ -3,23 +3,26 @@
   padding: 0;
 }
 
-.header,
-.book-appointment,
-.intro-text {
-  width: 100%;
+body {
   background: rgb(244, 218, 245);
-  position: relative;
 }
 
 .footer {
   width: 100%;
-  max-height: 30px;
+  max-height: 50px;
   background: #c8b0f7;
   position: relative;
   bottom: 0;
   align-items: center;
   text-align: center;
   vertical-align: middle;
+}
+
+.footer-text {
+  vertical-align: middle;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
 }
 
 .logo {
@@ -69,11 +72,39 @@ nav ul li a:hover {
   font-weight: bold;
 }
 
-.intro {
+.intro,
+.blogs {
   display: flex;
   flex-wrap: wrap;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 25px;
   font-weight: bold;
   padding-left: 10px;
+}
+
+.heading {
+  font-size: 50px;
+  color: black;
+}
+
+.heading span {
+  font-style: italic;
+  font-size: 35px;
+}
+
+.blog-by {
+  font-family: "Merienda", cursive;
+}
+
+.blog-content {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.blog {
+  border: 1px solid #353434;
+  border-radius: 1.5rem;
+  margin: 2rem;
+  transition: transform 0.2s;
+  padding: 2rem;
+  background-color: rgb(245, 187, 197);
 }
